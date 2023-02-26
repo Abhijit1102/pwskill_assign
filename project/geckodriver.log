@@ -1027,3 +1027,267 @@ DevTools listening on ws://127.0.0.1:52837/devtools/browser/a9d2c104-b661-49cb-8
 [2023-02-24T12:10:35Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
 1677240714480	Marionette	INFO	Stopped listening on port 52845
 Dynamically enable window occlusion 1
+1677343568611	geckodriver	INFO	Listening on 127.0.0.1:50547
+1677343571645	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50548" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\rust_mozprofilevthNF7"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677343572397	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677343572411	Marionette	INFO	Listening on port 50556
+Read port: 50556
+WebDriver BiDi listening on ws://127.0.0.1:50548
+1677343572795	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Lenovo\\AppData\\Local\\Temp\\rust_mozprofilevthNF7\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50548/devtools/browser/efe9ae41-279c-4929-a233-664ede0f502e
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.jsm:116:1
+NetworkError@resource://services-settings/RemoteSettingsClient.jsm:120:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.jsm:916:14
+maybeSync@resource://services-settings/RemoteSettingsClient.jsm:821:38
+
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.jsm", 116))
+1677344099942	Marionette	INFO	Stopped listening on port 50556
+Dynamically enable window occlusion 1
+iDi listening on ws://127.0.0.1:50590
+1677343628591	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Lenovo\\AppData\\Local\\Temp\\rust_mozprofilelm47Ed\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50590/devtools/browser/687b8785-ca1c-4b08-b722-ab14006a8f35
+[2023-02-25T16:49:24Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-25T16:49:24Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-25T16:49:24Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-25T16:49:24Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+1677343794069	Marionette	INFO	Stopped listening on port 50598
+Dynamically enable window occlusion 1
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
+1677344550454	geckodriver	INFO	Listening on 127.0.0.1:50873
+1677344553518	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50874" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\rust_mozprofilena8kIn"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677344554178	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677344554193	Marionette	INFO	Listening on port 50881
+Read port: 50881
+WebDriver BiDi listening on ws://127.0.0.1:50874
+1677344554535	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Lenovo\\AppData\\Local\\Temp\\rust_mozprofilena8kIn\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50874/devtools/browser/4f31e1fc-17e3-415b-9605-30a48b0ae973
+[2023-02-25T17:04:21Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-25T17:04:21Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-25T17:04:21Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-25T17:04:21Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+1677344669581	Marionette	INFO	Stopped listening on port 50881
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
+Dynamically enable window occlusion 1
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
+1677345143418	geckodriver	INFO	Listening on 127.0.0.1:51068
+1677345146446	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51069" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\rust_mozprofile44dfss"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677345147165	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677345147173	Marionette	INFO	Listening on port 51076
+Read port: 51076
+WebDriver BiDi listening on ws://127.0.0.1:51069
+1677345147518	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Lenovo\\AppData\\Local\\Temp\\rust_mozprofile44dfss\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51069/devtools/browser/cb1e44d7-8ff8-4a5b-9de8-f4734375bd6f
+[Parent 10060, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:777
+[2023-02-25T17:13:55Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-25T17:13:55Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-25T17:13:55Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-25T17:13:56Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-25T17:22:22Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-25T17:22:22Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-25T17:22:22Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-25T17:22:22Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+JavaScript error: chrome://browser/content/browser.xhtml, line 1: TypeError: gContextMenu is null
+console.warn: "Listener for event 'frame' did not return a promise."
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1677346951557	Marionette	INFO	Stopped listening on port 51076
+Dynamically enable window occlusion 1
+1677412940675	geckodriver	INFO	Listening on 127.0.0.1:50157
+1677412943780	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50158" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\rust_mozprofileH1jJ0d"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677412944536	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677412944545	Marionette	INFO	Listening on port 50165
+Read port: 50165
+WebDriver BiDi listening on ws://127.0.0.1:50158
+1677412945047	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Lenovo\\AppData\\Local\\Temp\\rust_mozprofileH1jJ0d\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50158/devtools/browser/ec133628-341a-4716-a3f4-dc2e0e2e0171
+[2023-02-26T12:02:44Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-26T12:02:45Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-26T12:02:45Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-26T12:02:45Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+1677412975955	Marionette	INFO	Stopped listening on port 50165
+Dynamically enable window occlusion 1
+1677413342248	geckodriver	INFO	Listening on 127.0.0.1:50376
+1677413345293	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50377" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\rust_mozprofileluRXUu"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677413346037	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677413346045	Marionette	INFO	Listening on port 50385
+Read port: 50385
+WebDriver BiDi listening on ws://127.0.0.1:50377
+1677413346434	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Lenovo\\AppData\\Local\\Temp\\rust_mozprofileluRXUu\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50377/devtools/browser/eb516bb8-b6e9-4799-8210-bf3badce87b8
+[2023-02-26T12:09:40Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-26T12:09:40Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-26T12:09:40Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-26T12:09:41Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+1677413410744	Marionette	INFO	Stopped listening on port 50385
+Dynamically enable window occlusion 1
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
+1677413484256	geckodriver	INFO	Listening on 127.0.0.1:50589
+1677413487305	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50590" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\rust_mozprofilezWYZlT"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677413488109	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677413488123	Marionette	INFO	Listening on port 50597
+Read port: 50597
+WebDriver BiDi listening on ws://127.0.0.1:50590
+1677413488572	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Lenovo\\AppData\\Local\\Temp\\rust_mozprofilezWYZlT\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50590/devtools/browser/4eb8a4b8-6b53-4aa2-ac60-ec65edb93776
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 764))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 416))
+[2023-02-26T12:12:05Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-26T12:12:05Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-26T12:12:05Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-26T12:12:06Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+1677413538014	Marionette	INFO	Stopped listening on port 50597
+Dynamically enable window occlusion 1
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1677413646502	geckodriver	INFO	Listening on 127.0.0.1:50780
+1677413649554	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50781" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\rust_mozprofilevFjBRv"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677413650215	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677413650226	Marionette	INFO	Listening on port 50788
+Read port: 50788
+WebDriver BiDi listening on ws://127.0.0.1:50781
+1677413650604	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Lenovo\\AppData\\Local\\Temp\\rust_mozprofilevFjBRv\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50781/devtools/browser/38650a86-8842-475d-8548-fe81b2efe049
+[2023-02-26T12:15:09Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-26T12:15:09Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-26T12:15:09Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-26T12:15:09Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+1677413750565	Marionette	INFO	Stopped listening on port 50788
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
+Dynamically enable window occlusion 1
+JavaScript error: https://www.youtube.com/results?q=PW-Foundation, line 12: TypeError: can't access dead object
