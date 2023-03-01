@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+   <head>
+      <title>YouTube Channel Reviews</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   </head>
+   <body>
+      <div id="container">
+         <h2>YouTube Channel Reviews</h2>
+         <table>
+            <thead>
+               <tr>
+                  <th>URL</th>
+                  <th>Thumbnail</th>
+                  <th>Title</th>
+                  <th>Views</th>
+                  <th>Time</th>
+               </tr>
+            </thead>
+            <tbody>
+               {% for review in reviews: %}
+               {% for i in range(0,5): %}
+               <tr>
+                  <td>{{ review['urls'][i] }}</td>
+                  <td>{{ review['thumbnails_links'][i]}}</td>
+                  <td>{{ review['titles'][i] }}</td>
+                  <td>{{ review['views'][i] }}</td>
+                  <td>{{ review['time'][i] }}</td>
+               </tr>
+               {% endfor %}
+               {% endfor %}
+            </tbody>
+         </table>
+      </div>
+   </body>
+</html>
