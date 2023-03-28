@@ -1,18 +1,12 @@
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS,cross_origin
 
+from requests_html import HTMLSession
+from bs4 import BeautifulSoup as bs
 import requests
 import re
-import os
-import time 
 
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.firefox.service import Service
-from selenium.webdriver.firefox.options import Options
 
-from urllib.request import urlopen as uReq
-import pymongo
 
 application = Flask(__name__) # initializing a flask app
 app=application
@@ -28,85 +22,84 @@ def index():
         try:
             searchString = request.form['content'].replace(" ","")
              
-            reviews = []   
-            options = Options()
-            driver = webdriver.Firefox(options=options)
+            url = "https://www.youtube.com/@PW-Foundation/videos"
 
-            driver.implicitly_wait(5)
+            html = requests.get(url).text
 
-            driver.get(f"https://www.youtube.com/@{searchString}/videos")
-            time.sleep(5)
-            allchannellist = driver.find_elements(By.CSS_SELECTOR, "a#video-title-link")
-                
-            urls = list(dict.fromkeys(map(lambda a : a.get_attribute("href"), allchannellist)))
-            driver.quit()
-            urls = urls[:5]
+            video_ids = re.findall(r"watch\?v=(\S{11})", html)
+
+            video_links = ["https://www.youtube.com/watch?v=" + id for id in video_ids]
+
+            urls = video_links[:5]
+
+            urls
 
             
             thumbnails_links = []
 
-            for i in urls:
-                url = i
+            for url in urls:
+
+                # Extract video ID from URL
                 exp = "^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*"
-                s = re.findall(exp,url)[0][-1]
-                thumbnail = f"https://i.ytimg.com/vi/{s}/maxresdefault.jpg"
+                s = re.findall(exp, url)[0][-1]
 
-                #image scraping
-                def imagedown(url, folder):
-                    try:
-                        os.mkdir(os.path.join(os.getcwd(), folder))
-                    except:
-                        pass
-                    os.chdir(os.path.join(os.getcwd(), folder))
+                # Construct image URL
+                thumbnail_url = f"https://i.ytimg.com/vi/{s}/maxresdefault.jpg"
 
-                    name = url
-                    link = url
-                    with open(name.replace(' ', '-').replace('/', '') + '.jpg', 'wb') as f:
-                        im = requests.get(link)
-                        f.write(im.content)
-                        #print( name)
-                        thumbnails_links.append(name)
+                thumbnails_links.append(thumbnail_url)  
 
-                imagedown(thumbnail, 'image')
+            titles = []
+            views = []
+            times = []   
+            def give_me_everything():
 
+                data = soup.find_all("meta") 
+
+                for i in range(len(data)):  
+                    print(data[i])
+
+            for url  in urls:
+            
+                session = HTMLSession() 
+                response = session.get(url)  
+
+                if response.status_code != 200: 
+                    print("Error! Response = " + str(response.status_code))
+                else:
+                    soup = bs(response.content, "html.parser")  
+                    title =  soup.find("meta", property="og:title")["content"]
+                    titles.append(title)
+
+
+            for url in urls:
+            
+                session = HTMLSession() 
+                response = session.get(url)  
+
+                if response.status_code != 200: 
+                    print("Error! Response = " + str(response.status_code))
+                else:
+                    soup = bs(response.content, "html.parser")  
+                    view =  soup.find("meta", itemprop="interactionCount")["content"]
+                    views.append(view)
+
+
+            for url in urls:
+   
+                session = HTMLSession() 
+                response = session.get(url)  
+
+                if response.status_code != 200: 
+                    print("Error! Response = " + str(response.status_code))
+                else:
+                    soup = bs(response.content, "html.parser")  
+                    time = soup.find("meta", itemprop="uploadDate")["content"]
+                    times.append(time)
                 
-            driver = webdriver.Firefox( options=options)
-
-            driver.implicitly_wait(5)
-
-
-            driver.get(f"https://www.youtube.com/@{searchString}/videos")
-            time.sleep(5)
-            all_titles = driver.find_elements(By.CSS_SELECTOR, "a#video-title-link")
-            titles = [title.get_attribute('title') for title in all_titles]
-            driver.quit()
-            titles= titles[:5]
-
-            driver = webdriver.Firefox(options=options)
-
-            driver.implicitly_wait(5)
-            driver.get(f"https://www.youtube.com/@{searchString}/videos")
-            time.sleep(5)
-            allchannellist = driver.find_elements(By.CSS_SELECTOR, "span.style-scope.ytd-video-meta-block")
-            views_time = list(dict.fromkeys(map(lambda a : a.get_attribute("innerHTML"), allchannellist)))
-            driver.quit()
-            views_time = views_time[0:11]
-            views =[i  for i in views_time if i.endswith("views")]
-
-            driver = webdriver.Firefox(options=options)
-
-            driver.implicitly_wait(5)
-            driver.get(f"https://www.youtube.com/@{searchString}/videos")
-            #time.sleep(5)
-            allchannellist = driver.find_elements(By.CSS_SELECTOR, "span.style-scope.ytd-video-meta-block")
-            views_time = list(dict.fromkeys(map(lambda a : a.get_attribute("innerHTML"), allchannellist)))
-            driver.quit()
-            views_time = views_time[0:11]
-            times = [i  for i in views_time if not i.endswith("views")]
             mydict = {"urls": urls, "thumbnails_links": thumbnails_links, 
                       "titles": titles, "views": views,
                     "time": times}
-            
+            reviews= []
             reviews.append(mydict)
 
             return render_template('results.html', reviews=reviews)
